@@ -8,8 +8,7 @@ from flask import Flask, jsonify, request
 ROOT = Path("/var/task")
 import os
 
-MODEL_PATH = os.path.join(os.getcwd(), "model", "disease_model.pkl")
-DESC_PATH = ROOT / "data" / "symptom_Description.csv"
+MODEL_PATH = os.path.join(os.path.dirname(__file__), "model", "disease_model.pkl")DESC_PATH = ROOT / "data" / "symptom_Description.csv"
 PREC_PATH = ROOT / "data" / "symptom_precaution.csv"
 
 app = Flask(__name__)
