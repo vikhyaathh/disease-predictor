@@ -6,8 +6,9 @@ from rapidfuzz import process, fuzz
 from flask import Flask, jsonify, request
 
 ROOT = Path("/var/task")
-MODEL_PATH = ROOT / "model" / "disease_model.pkl"
-DESC_PATH = ROOT / "data" / "symptom_Description.csv"
+import os
+
+MODEL_PATH = os.path.join(os.path.dirname(__file__), "model", "disease_model.pkl")DESC_PATH = ROOT / "data" / "symptom_Description.csv"
 PREC_PATH = ROOT / "data" / "symptom_precaution.csv"
 
 app = Flask(__name__)
