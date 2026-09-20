@@ -1,0 +1,27 @@
+# Secrets — never commit
+.env
+.streamlit/secrets.toml
+
+# Python
+__pycache__/
+*.py[cod]
+.Python
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Build / packaging
+dist/
+build/
+*.egg-info/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+
+# Jupyter
+.ipynb_checkpoints/

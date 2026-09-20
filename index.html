@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SympAI — Disease Predictor</title><link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div class="bg"></div><main>
+<header><div class="brand"><div class="logo">✚</div><div><div class="eyebrow">AI-POWERED HEALTH TOOL</div><h1>Symp<span>AI</span></h1></div></div><div class="status"><i></i> Model online</div></header>
+<section class="hero"><div><p class="kicker">NATURAL LANGUAGE → ML PREDICTION</p><h2>Describe your symptoms.<br><em>Get an AI-assisted prediction.</em></h2><p class="lead">Enter symptoms in your own words. SympAI maps them to the trained symptom set and uses a Random Forest model to surface possible conditions.</p></div></section>
+<section class="layout">
+<div class="card input-card"><div class="card-head"><div><span class="step">01</span><h3>Describe how you feel</h3></div><span class="count" id="count">0 symptoms</span></div>
+<textarea id="input" placeholder="Example: I have fever, headache, cough and feel very tired..."></textarea>
+<div class="chips" id="chips"></div>
+<div class="actions"><button id="analyze">Analyze symptoms</button><button class="ghost" id="clear">Clear</button></div>
+<p class="hint">Tip: You can describe several symptoms in one sentence.</p></div>
+<div class="card result-card"><div class="card-head"><div><span class="step">02</span><h3>Prediction</h3></div><span id="badge" class="badge">Waiting</span></div><div id="results" class="results"><div class="empty"><div class="empty-icon">⌁</div><p>Your prediction will appear here.</p><small>Provide at least 3 recognizable symptoms.</small></div></div></div>
+</section>
+<section id="warning" class="warning hidden"></section>
+<footer><strong>Educational project</strong> · Not a medical diagnostic tool. For urgent or concerning symptoms, contact a qualified healthcare professional.</footer>
+</main><script src="/script.js"></script>
+</body></html>
