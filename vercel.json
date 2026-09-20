@@ -1,0 +1,10 @@
+{
+  "functions": {
+    "api/index.py": {
+      "includeFiles": [
+        "model/disease_model.pkl",
+        "data/*.csv"
+      ]
+    }
+  }
+}
